@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bruno.mydbexcercise.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="495dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
+
+        <EditText
+            android:id="@+id/user_Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="300dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="40dp"
+            android:layout_above="@+id/deleteButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp" />
+
+        <TextView
+            android:id="@+id/records_TextView"
+            android:layout_width="278dp"
+            android:layout_height="185dp"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="211dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="94dp" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteButtonClicked"
+            android:text="Delete"
+            tools:layout_editor_absoluteX="242dp"
+            tools:layout_editor_absoluteY="125dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignBaseline="@+id/addButton"
+            android:layout_alignBottom="@+id/addButton"
+            android:layout_alignRight="@+id/records_TextView"
+            android:layout_alignEnd="@+id/records_TextView" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addButtonClicked"
+            android:text="Add"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="127dp"
+            android:layout_above="@+id/records_TextView"
+            android:layout_alignLeft="@+id/records_TextView"
+            android:layout_alignStart="@+id/records_TextView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="65dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
